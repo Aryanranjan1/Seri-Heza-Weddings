@@ -18,7 +18,7 @@ const PortfolioSection = () => {
         <div className="gap-8 space-y-8 md:columns-2">
           {portfolioItems.map((item) => {
             const image = PlaceHolderImages.find((img) => img.id === item.imageId);
-            if (!image) return null;
+            if (!image || !image.width || !image.height) return null;
             
             return (
               <div key={item.imageId} className="break-inside-avoid">
@@ -27,8 +27,8 @@ const PortfolioSection = () => {
                     <Image
                       src={image.imageUrl}
                       alt={image.description}
-                      width={400}
-                      height={parseInt(image.imageUrl.split('/')[5], 10)}
+                      width={image.width}
+                      height={image.height}
                       className="w-full h-auto object-cover transition-transform duration-500 group-hover:scale-105"
                       data-ai-hint={image.imageHint}
                     />

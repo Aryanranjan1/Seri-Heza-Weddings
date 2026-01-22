@@ -22,25 +22,33 @@
       "id": "portfolio-1",
       "description": "A vertical shot of a wedding ceremony with a stunning floral arch",
       "imageUrl": "https://images.unsplash.com/photo-1507915977619-6ccfe8003ae6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWRkaW5nJTIwY2VyZW1vbnl8ZW58MHx8fHwxNzY5MDU2NjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "wedding ceremony"
+      "imageHint": "wedding ceremony",
+      "width": 800,
+      "height": 1200
     },
     {
       "id": "portfolio-2",
       "description": "Guests enjoying a beautifully decorated wedding reception dinner",
       "imageUrl": "https://images.unsplash.com/photo-1723832348105-2e69f948135a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3ZWRkaW5nJTIwcmVjZXB0aW9ufGVufDB8fHx8MTc2OTA1NTgzNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "wedding reception"
+      "imageHint": "wedding reception",
+      "width": 1200,
+      "height": 800
     },
     {
       "id": "portfolio-3",
       "description": "A happy bride and groom walking down the aisle after their ceremony",
       "imageUrl": "https://images.unsplash.com/photo-1593614405051-ff61be2b3ff1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicmlkZSUyMGdyb29tfGVufDB8fHx8MTc2OTEyMzQyNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bride groom"
+      "imageHint": "bride groom",
+      "width": 800,
+      "height": 1100
     },
     {
       "id": "portfolio-4",
       "description": "A close-up of a detailed wedding cake with intricate floral decorations",
       "imageUrl": "https://images.unsplash.com/photo-1520245787685-fb1e6732fb76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3ZWRkaW5nJTIwZGV0YWlsc3xlbnwwfHx8fDE3NjkxMjM0Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "wedding details"
+      "imageHint": "wedding details",
+      "width": 800,
+      "height": 1200
     }
   ]
 }
