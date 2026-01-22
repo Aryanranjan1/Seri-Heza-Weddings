@@ -20,6 +20,7 @@ export default {
         headline: ['"Playfair Display"', 'serif'],
         body: ['Lora', 'serif'],
         ui: ['Montserrat', 'sans-serif'],
+        signature: ['"Mrs Saint Delafield"', 'cursive'],
       },
       colors: {
         'dusty-rose': '#F2E8E4',
