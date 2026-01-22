@@ -1,22 +1,15 @@
 'use client';
 import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Calendar } from '@/components/ui/calendar';
-import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form';
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 import * as z from 'zod';
-import { WhatsAppIcon } from '../icons/whatsapp-icon';
-import { Calendar as CalendarIcon, MapPin } from 'lucide-react';
 import { cn } from '@/lib/utils';
-import { format } from 'date-fns';
 
 const formSchema = z.object({
   name: z.string().min(2, { message: 'Name must be at least 2 characters.' }),
   phone: z.string().min(10, { message: 'Please enter a valid phone number.' }),
-  weddingDate: z.date({ required_error: 'A date is required.' }),
+  weddingDate: z.string({ required_error: 'A date is required.' }).min(1, 'A date is required.'),
   venue: z.string().optional(),
   pax: z.string().min(1, { message: "Please estimate guest count." }),
   interest: z.string({ required_error: 'Please select an interest.' }),
@@ -25,6 +18,14 @@ const formSchema = z.object({
 const ConversionSection = () => {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
+    defaultValues: {
+      name: '',
+      phone: '',
+      weddingDate: '',
+      venue: '',
+      pax: '',
+      interest: '',
+    }
   });
 
   function onSubmit(values: z.infer<typeof formSchema>) {
@@ -32,161 +33,130 @@ const ConversionSection = () => {
     // Handle form submission
   }
 
+  const inputStyles = "w-full py-2.5 border-0 border-b border-gray-300 font-headline text-lg text-gray-800 bg-transparent outline-none transition-all rounded-none focus:border-muted-gold placeholder:text-gray-400 placeholder:font-sans placeholder:text-base placeholder:tracking-wider";
+
   return (
-    <section id="contact" className="grid grid-cols-1 lg:grid-cols-2">
-      <div className="bg-dark-maroon text-primary-foreground p-8 md:p-16 flex flex-col justify-center items-center text-center">
-        <h2 className="font-headline text-4xl md:text-5xl leading-tight mb-4">Prefer to chat?</h2>
-        <p className="font-body text-lg text-white/80 mb-8 max-w-sm">
-          Get an instant response from our team for quick questions and consultations.
-        </p>
-        <Button className="bg-whatsapp-green text-white rounded-full h-16 w-full max-w-xs text-lg font-bold hover:bg-whatsapp-green/90 transition-transform hover:scale-105">
-          <WhatsAppIcon className="h-7 w-7 mr-3" />
-          WhatsApp Us Now
-        </Button>
-        <p className="font-ui text-sm uppercase tracking-wide-ui mt-8 text-white/60">
-          +60 16-977 2878
-        </p>
-        <p className="font-body text-sm mt-4 text-white/60">Operating Hours: 10am - 7pm daily</p>
-        <div className="mt-8 border border-white/20 rounded-lg overflow-hidden w-full max-w-sm h-48">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.043519198642!2d101.52183361530206!3d3.083313997769185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4d493a3f5761%3A0x1634d5ac889f029a!2sShah%20Alam%2C%20Selangor%2C%20Malaysia!5e0!3m2!1sen!2sus!4v1683050012345!5m2!1sen!2sus"
-            width="100%"
-            height="100%"
-            style={{ border: 0 }}
-            allowFullScreen={false}
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            title="Shah Alam Map"
-          ></iframe>
+    <section id="contact" className="flex flex-col lg:flex-row w-full min-h-[700px]">
+      <div className="lg:w-2/5 bg-[#1C1C1C] text-white p-12 lg:p-24 flex flex-col justify-center items-center text-center relative overflow-hidden">
+        <div className="absolute inset-0 opacity-[0.03] bg-[url('data:image/svg+xml,%3Csvg%20width=\'40\'%20height=\'40\'%20viewBox=\'0%200%2040%2040\'%20xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cpath%20d=\'M20%2020.5V18H0v-2h20v-2H0v-2h20v-2H0V8h20V6H0V4h20V2H0V0h22v20h2V0h2v20h2V0h2v20h2V0h2v20h2v2H22v20h-2v-2h2v-2h-2v-2h2v-2h-2v-2h2v-2h-2v-2h2v-2h-2v-2h2v-2h-2v-2h2v-2h-2v-2h2v-2h-2v-2h-2v-2z\'%20fill=\'%23ffffff\'%20fill-opacity=\'1\'%20fill-rule=\'evenodd\'/%3E%3C/svg%3E')]"></div>
+        <div className="relative z-10 w-full max-w-md">
+          <h3 className="font-headline text-5xl font-normal mb-6 text-muted-gold tracking-tight">Prefer to chat?</h3>
+          <p className="font-body text-base font-light opacity-70 mb-12 leading-relaxed tracking-wider max-w-sm mx-auto">
+            Instant responses for quick questions & consultations.
+          </p>
+          <a 
+            href="https://wa.me/60169772878" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-gradient-to-r from-[#B88A44] via-[#E5D1A5] to-[#B88A44] bg-[size:200%_auto] text-[#1C1C1C] py-5 px-11 rounded-sm no-underline font-semibold text-xs tracking-[0.15em] uppercase inline-flex items-center gap-4 transition-all duration-500 ease-in-out shadow-[0_5px_15px_rgba(184,138,68,0.3)] hover:bg-right hover:-translate-y-0.5 hover:shadow-[0_8px_20px_rgba(184,138,68,0.5)]"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="currentColor" d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.637 3.891 1.685 5.73l-1.124 4.103 3.928-1.532z"/></svg>
+            WhatsApp Us Now
+          </a>
+          <div className="mt-16 inline-block border border-muted-gold/30 py-8 px-16 relative">
+            <span className="block text-xs uppercase tracking-[0.25em] text-muted-gold mb-2.5">Operating Hours</span>
+            <strong className="font-headline text-lg text-white font-normal">10am - 7pm daily</strong>
+          </div>
         </div>
       </div>
-      <div className="bg-background p-8 md:p-16 flex flex-col justify-center">
-        <h2 className="font-headline text-4xl md:text-5xl leading-tight mb-8">Structured Inquiry</h2>
-        <Form {...form}>
-          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-ui uppercase tracking-wide-ui text-xs">Name</FormLabel>
-                    <FormControl>
-                      <Input placeholder="Your Full Name" {...field} className="h-12" />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="phone"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-ui uppercase tracking-wide-ui text-xs">Phone</FormLabel>
-                    <FormControl>
-                      <Input placeholder="e.g. 012-3456789" {...field} className="h-12" />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
-            <FormField
-              control={form.control}
-              name="weddingDate"
-              render={({ field }) => (
-                <FormItem className="flex flex-col">
-                  <FormLabel className="font-ui uppercase tracking-wide-ui text-xs">Wedding Date</FormLabel>
-                  <Popover>
-                    <PopoverTrigger asChild>
+      
+      <div className="lg:w-3/5 bg-white p-12 lg:p-24 flex flex-col justify-center">
+        <div className="max-w-3xl w-full mx-auto">
+          <h3 className="font-headline text-4xl text-gray-900 mb-12">Structured Inquiry</h3>
+          <Form {...form}>
+            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-10 gap-y-14">
+                <FormField
+                  control={form.control}
+                  name="name"
+                  render={({ field }) => (
+                    <FormItem className="relative">
+                      <FormLabel className="text-xs tracking-[0.2em] uppercase text-gray-500 font-semibold mb-3 block">Name</FormLabel>
                       <FormControl>
-                        <Button
-                          variant={"outline"}
-                          className={cn(
-                            "w-full h-12 pl-3 text-left font-normal",
-                            !field.value && "text-muted-foreground"
-                          )}
-                        >
-                          {field.value ? (
-                            format(field.value, "PPP")
-                          ) : (
-                            <span>Pick a date</span>
-                          )}
-                          <CalendarIcon className="ml-auto h-4 w-4 opacity-50" />
-                        </Button>
+                        <input type="text" placeholder="Your Name" {...field} className={inputStyles} />
                       </FormControl>
-                    </PopoverTrigger>
-                    <PopoverContent className="w-auto p-0" align="start">
-                      <Calendar
-                        mode="single"
-                        selected={field.value}
-                        onSelect={field.onChange}
-                        disabled={(date) => date < new Date() || date < new Date("1900-01-01")}
-                        initialFocus
-                      />
-                    </PopoverContent>
-                  </Popover>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <FormField
-                control={form.control}
-                name="venue"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-ui uppercase tracking-wide-ui text-xs">Venue (if any)</FormLabel>
-                    <FormControl>
-                      <Input placeholder="e.g. The Glasshouse" {...field} className="h-12" />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="pax"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel className="font-ui uppercase tracking-wide-ui text-xs">Estimated Pax</FormLabel>
-                    <FormControl>
-                      <Input placeholder="e.g. 500" {...field} className="h-12" />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-            </div>
-            <FormField
-              control={form.control}
-              name="interest"
-              render={({ field }) => (
-                <FormItem>
-                  <FormLabel className="font-ui uppercase tracking-wide-ui text-xs">I'm interested in...</FormLabel>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
-                    <FormControl>
-                      <SelectTrigger className="h-12">
-                        <SelectValue placeholder="Select a service" />
-                      </SelectTrigger>
-                    </FormControl>
-                    <SelectContent>
-                      <SelectItem value="full">Full Wedding Planning</SelectItem>
-                      <SelectItem value="decor">Pelamin &amp; Decor</SelectItem>
-                      <SelectItem value="makeup">Bridal Makeup</SelectItem>
-                      <SelectItem value="attire">Busana &amp; Attire</SelectItem>
-                    </SelectContent>
-                  </Select>
-                  <FormMessage />
-                </FormItem>
-              )}
-            />
-            <Button type="submit" className="w-full h-14 bg-foreground text-background rounded-full hover:bg-muted-gold hover:text-foreground font-ui uppercase tracking-wide-ui text-base">
-              Check Availability
-            </Button>
-          </form>
-        </Form>
+                      <FormMessage className="absolute -bottom-6 text-xs"/>
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="phone"
+                  render={({ field }) => (
+                    <FormItem className="relative">
+                      <FormLabel className="text-xs tracking-[0.2em] uppercase text-gray-500 font-semibold mb-3 block">Phone</FormLabel>
+                      <FormControl>
+                        <input type="tel" placeholder="+60..." {...field} className={inputStyles} />
+                      </FormControl>
+                      <FormMessage className="absolute -bottom-6 text-xs"/>
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="weddingDate"
+                  render={({ field }) => (
+                    <FormItem className="relative">
+                      <FormLabel className="text-xs tracking-[0.2em] uppercase text-gray-500 font-semibold mb-3 block">Wedding Date</FormLabel>
+                      <FormControl>
+                        <input type="date" {...field} className={cn(inputStyles, 'text-gray-500')} />
+                      </FormControl>
+                      <FormMessage className="absolute -bottom-6 text-xs"/>
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="venue"
+                  render={({ field }) => (
+                    <FormItem className="relative">
+                      <FormLabel className="text-xs tracking-[0.2em] uppercase text-gray-500 font-semibold mb-3 block">Venue (If Any)</FormLabel>
+                      <FormControl>
+                        <input type="text" placeholder="Location" {...field} className={inputStyles} />
+                      </FormControl>
+                       <FormMessage className="absolute -bottom-6 text-xs"/>
+                    </FormItem>
+                  )}
+                />
+                 <FormField
+                  control={form.control}
+                  name="pax"
+                  render={({ field }) => (
+                    <FormItem className="relative lg:col-span-2">
+                      <FormLabel className="text-xs tracking-[0.2em] uppercase text-gray-500 font-semibold mb-3 block">Estimated Pax</FormLabel>
+                      <FormControl>
+                        <input type="number" placeholder="e.g. 500" {...field} className={inputStyles} />
+                      </FormControl>
+                      <FormMessage className="absolute -bottom-6 text-xs"/>
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="interest"
+                  render={({ field }) => (
+                    <FormItem className="relative lg:col-span-2">
+                       <FormLabel className="text-xs tracking-[0.2em] uppercase text-gray-500 font-semibold mb-3 block">I'm interested in...</FormLabel>
+                      <FormControl>
+                        <select {...field} className={cn(inputStyles, "appearance-none bg-no-repeat bg-right bg-[url('data:image/svg+xml,%3Csvg%20xmlns=\'http://www.w3.org/2000/svg\'%20width=\'12\'%20height=\'12\'%20viewBox=\'0%200%2024%2024\'%3E%3Cpath%20fill=\'%23C5A059\'%20d=\'M0%207.33l2.829-2.83%209.175%209.339%209.167-9.339%202.829%202.83-11.996%2012.17z\'/%3E%3C/svg%3E')]")}>
+                          <option value="" disabled>Select a service</option>
+                          <option value="full">Full Wedding Planning</option>
+                          <option value="decor">Pelamin &amp; Decor</option>
+                          <option value="makeup">Bridal Makeup</option>
+                          <option value="attire">Busana &amp; Attire</option>
+                        </select>
+                      </FormControl>
+                      <FormMessage className="absolute -bottom-6 text-xs"/>
+                    </FormItem>
+                  )}
+                />
+              </div>
+              <Button type="submit" className="mt-12 w-full bg-[#1C1C1C] text-white border border-[#1C1C1C] py-8 px-0 font-sans text-xs font-semibold tracking-[0.25em] uppercase rounded-none transition-all duration-400 ease-in-out hover:bg-transparent hover:text-[#1C1C1C]">
+                Check Availability
+              </Button>
+            </form>
+          </Form>
+        </div>
       </div>
     </section>
   );
