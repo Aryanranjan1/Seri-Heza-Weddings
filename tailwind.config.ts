@@ -8,13 +8,24 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    container: {
+      center: true,
+      padding: '2rem',
+      screens: {
+        '2xl': '1400px',
+      },
+    },
     extend: {
       fontFamily: {
-        body: ['Inter', 'sans-serif'],
-        headline: ['Inter', 'sans-serif'],
-        code: ['monospace'],
+        headline: ['"Playfair Display"', 'serif'],
+        body: ['Lora', 'serif'],
+        ui: ['Montserrat', 'sans-serif'],
       },
       colors: {
+        'dusty-rose': '#F2E8E4',
+        'dark-maroon': '#5A1B28',
+        'whatsapp-green': '#25D366',
+        'muted-gold': 'hsl(var(--accent))',
         background: 'hsl(var(--background))',
         foreground: 'hsl(var(--foreground))',
         card: {
@@ -55,16 +66,10 @@ export default {
           '4': 'hsl(var(--chart-4))',
           '5': 'hsl(var(--chart-5))',
         },
-        sidebar: {
-          DEFAULT: 'hsl(var(--sidebar-background))',
-          foreground: 'hsl(var(--sidebar-foreground))',
-          primary: 'hsl(var(--sidebar-primary))',
-          'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
-          accent: 'hsl(var(--sidebar-accent))',
-          'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
-          border: 'hsl(var(--sidebar-border))',
-          ring: 'hsl(var(--sidebar-ring))',
-        },
+      },
+      letterSpacing: {
+        'wide-ui': '0.15em',
+        'wider-ui': '0.25em',
       },
       borderRadius: {
         lg: 'var(--radius)',

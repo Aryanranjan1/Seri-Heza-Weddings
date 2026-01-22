@@ -1,3 +1,46 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero",
+      "description": "A bride and groom in an elegant embrace in a grand hall",
+      "imageUrl": "https://images.unsplash.com/photo-1599462616558-2b75fd26a283?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwY291cGxlfGVufDB8fHx8MTc2OTA5MzQ4MXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wedding couple"
+    },
+    {
+      "id": "intro-portrait",
+      "description": "A beautiful bride looking over her shoulder, with soft lighting",
+      "imageUrl": "https://images.unsplash.com/photo-1677691256999-45d69a11b197?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicmlkZSUyMHBvcnRyYWl0fGVufDB8fHx8MTc2OTEyMzQyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bride portrait"
+    },
+    {
+      "id": "intro-detail",
+      "description": "Close-up of two wedding rings on a textured surface",
+      "imageUrl": "https://images.unsplash.com/photo-1554047310-ab6170fc7b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWRkaW5nJTIwcmluZ3N8ZW58MHx8fHwxNzY5MDgxNDEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wedding rings"
+    },
+    {
+      "id": "portfolio-1",
+      "description": "A vertical shot of a wedding ceremony with a stunning floral arch",
+      "imageUrl": "https://images.unsplash.com/photo-1507915977619-6ccfe8003ae6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWRkaW5nJTIwY2VyZW1vbnl8ZW58MHx8fHwxNzY5MDU2NjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wedding ceremony"
+    },
+    {
+      "id": "portfolio-2",
+      "description": "Guests enjoying a beautifully decorated wedding reception dinner",
+      "imageUrl": "https://images.unsplash.com/photo-1723832348105-2e69f948135a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3ZWRkaW5nJTIwcmVjZXB0aW9ufGVufDB8fHx8MTc2OTA1NTgzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wedding reception"
+    },
+    {
+      "id": "portfolio-3",
+      "description": "A happy bride and groom walking down the aisle after their ceremony",
+      "imageUrl": "https://images.unsplash.com/photo-1593614405051-ff61be2b3ff1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicmlkZSUyMGdyb29tfGVufDB8fHx8MTc2OTEyMzQyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "bride groom"
+    },
+    {
+      "id": "portfolio-4",
+      "description": "A close-up of a detailed wedding cake with intricate floral decorations",
+      "imageUrl": "https://images.unsplash.com/photo-1520245787685-fb1e6732fb76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3ZWRkaW5nJTIwZGV0YWlsc3xlbnwwfHx8fDE3NjkxMjM0Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "wedding details"
+    }
+  ]
 }
