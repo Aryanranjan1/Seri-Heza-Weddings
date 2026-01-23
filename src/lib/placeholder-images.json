@@ -7,16 +7,16 @@
       "imageHint": "wedding couple"
     },
     {
-      "id": "intro-portrait",
-      "description": "A beautiful bride looking over her shoulder, with soft lighting",
-      "imageUrl": "https://images.unsplash.com/photo-1677691256999-45d69a11b197?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxicmlkZSUyMHBvcnRyYWl0fGVufDB8fHx8MTc2OTEyMzQyN3ww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bride portrait"
+      "id": "intro-main",
+      "description": "Luxury Wedding Setting",
+      "imageUrl": "https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "wedding setting"
     },
     {
-      "id": "intro-detail",
-      "description": "Close-up of two wedding rings on a textured surface",
-      "imageUrl": "https://images.unsplash.com/photo-1554047310-ab6170fc7b10?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHx3ZWRkaW5nJTIwcmluZ3N8ZW58MHx8fHwxNzY5MDgxNDEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "wedding rings"
+      "id": "intro-floating",
+      "description": "Bride Portrait",
+      "imageUrl": "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "bride portrait"
     },
     {
       "id": "journal-hero",
