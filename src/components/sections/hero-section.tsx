@@ -34,14 +34,14 @@ const HeroSection = () => {
       <div className="absolute inset-0 z-20 bg-[radial-gradient(circle,rgba(0,0,0,0.3)_0%,rgba(0,0,0,0.7)_100%)]" />
       
       <div className="relative z-30 flex flex-col items-center justify-center text-center text-white px-4 max-w-4xl mt-[-20px]">
-        <span className={cn('font-ui text-sm uppercase tracking-[0.3em] mb-4', fadeUp('delay-200'))}>
+        <span className={cn('font-ui text-sm uppercase tracking-[0.3em] mb-2', fadeUp('delay-200'))}>
           Established Elegance
         </span>
         <h1 className={cn('font-headline text-[2.1rem] md:text-[3.4rem] leading-tight mb-2 drop-shadow-lg', fadeUp('delay-500'))}>
           Dimana Impian Raja<br/>Seharimu Terlaksana
         </h1>
-        <h2 className={cn('font-ui text-[0.7rem] md:text-[0.9rem] uppercase tracking-[0.15em] font-light mb-8', fadeUp('delay-800'))}>
-          THE AMAZING WEDDING | PREMIER PLANNER & STYLIST
+        <h2 className={cn('font-ui text-[0.7rem] md:text-[0.9rem] uppercase tracking-[0.15em] font-light mb-6', fadeUp('delay-800'))}>
+          PREMIER PLANNER & STYLIST
         </h2>
         <Link href="#intro" className={cn('inline-block border border-white px-8 py-3.5 md:px-11 md:py-4 font-ui text-[0.7rem] md:text-xs uppercase tracking-[0.2em] transition-colors hover:bg-white hover:text-black', fadeUp('delay-1000'))}>
           Start Your Journey
