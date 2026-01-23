@@ -19,42 +19,98 @@
       "imageHint": "wedding rings"
     },
     {
-      "id": "portfolio-1",
-      "description": "A vertical shot of a wedding ceremony with a stunning floral arch",
-      "imageUrl": "https://images.unsplash.com/photo-1507915977619-6ccfe8003ae6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3ZWRkaW5nJTIwY2VyZW1vbnl8ZW58MHx8fHwxNzY5MDU2NjEwfDA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "wedding ceremony",
-      "width": 800,
-      "height": 1200
-    },
-    {
-      "id": "portfolio-2",
-      "description": "Guests enjoying a beautifully decorated wedding reception dinner",
-      "imageUrl": "https://images.unsplash.com/photo-1723832348105-2e69f948135a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3ZWRkaW5nJTIwcmVjZXB0aW9ufGVufDB8fHx8MTc2OTA1NTgzNHww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "wedding reception",
-      "width": 1200,
-      "height": 800
-    },
-    {
-      "id": "portfolio-3",
-      "description": "A happy bride and groom walking down the aisle after their ceremony",
-      "imageUrl": "https://images.unsplash.com/photo-1593614405051-ff61be2b3ff1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxicmlkZSUyMGdyb29tfGVufDB8fHx8MTc2OTEyMzQyNnww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "bride groom",
-      "width": 800,
-      "height": 1100
-    },
-    {
-      "id": "portfolio-4",
-      "description": "A close-up of a detailed wedding cake with intricate floral decorations",
-      "imageUrl": "https://images.unsplash.com/photo-1520245787685-fb1e6732fb76?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHx3ZWRkaW5nJTIwZGV0YWlsc3xlbnwwfHx8fDE3NjkxMjM0Mjd8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "wedding details",
-      "width": 800,
-      "height": 1200
-    },
-    {
       "id": "journal-hero",
       "description": "A lavish Malay wedding setup with intricate details and decorations",
       "imageUrl": "https://images.unsplash.com/photo-1732347211043-3a40567ce367?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxtYWxheSUyMHdlZGRpbmclMjBzZXQlMjB1cHxlbnwwfHx8fDE3NjkxMjc2OTl8MA&ixlib=rb-4.1.0&q=80&w=1080",
       "imageHint": "malay wedding"
+    },
+    {
+      "id": "journal-hero-new",
+      "description": "A beautiful Malay wedding setup",
+      "imageUrl": "https://images.unsplash.com/photo-1623689405629-9e8c45479632?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "malay wedding",
+      "width": 1200,
+      "height": 800
+    },
+    {
+      "id": "portfolio-fw-1",
+      "description": "Couple getting married, Tom & Angela",
+      "imageUrl": "https://images.unsplash.com/photo-1511285560982-1351c4f8c31b?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "wedding couple",
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "id": "portfolio-fw-2",
+      "description": "Wedding ceremony for Sara & Nick",
+      "imageUrl": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "wedding ceremony",
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "id": "portfolio-fw-3",
+      "description": "Wedding reception for Rizal & Yasmin",
+      "imageUrl": "https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "wedding reception",
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "id": "portfolio-fw-4",
+      "description": "Bride and groom, Kristina & Mike",
+      "imageUrl": "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "bride groom",
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "id": "portfolio-fw-5",
+      "description": "Wedding details for Rob & Ashley",
+      "imageUrl": "https://images.unsplash.com/photo-1520854221256-17451cc330e7?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "wedding details",
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "id": "portfolio-fw-6",
+      "description": "Malay wedding of Zayn & Izzah",
+      "imageUrl": "https://images.unsplash.com/photo-1522673607200-1645062cd958?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "malay wedding",
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "id": "portfolio-fw-7",
+      "description": "Outdoor wedding of Omar & Aisha",
+      "imageUrl": "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "wedding outdoor",
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "id": "portfolio-fw-8",
+      "description": "Wedding portrait of Khairul & Mira",
+      "imageUrl": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "wedding portrait",
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "id": "portfolio-fw-9",
+      "description": "Wedding decor for Syafiq & Nadiya",
+      "imageUrl": "https://images.unsplash.com/photo-1623163155700-4b5311082c9f?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "wedding decor",
+      "width": 1000,
+      "height": 800
+    },
+    {
+      "id": "portfolio-fw-10",
+      "description": "Wedding aisle for Adam & Hani",
+      "imageUrl": "https://images.unsplash.com/photo-1596522354195-e8448ea165dc?q=80&w=1974&auto=format&fit=crop",
+      "imageHint": "wedding aisle",
+      "width": 1000,
+      "height": 800
     }
   ]
 }
