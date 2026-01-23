@@ -38,7 +38,7 @@ const SeoAuthoritySection = () => {
   const heroArticleImage = PlaceHolderImages.find((img) => img.id === 'journal-hero');
 
   return (
-    <section className="py-20 md:py-32 px-[5%] max-w-[1400px] mx-auto">
+    <section id="journal" className="py-20 md:py-32 px-[5%] max-w-[1400px] mx-auto">
       <div className="grid grid-cols-1 lg:grid-cols-[1.5fr_1fr] gap-12 lg:gap-24 items-start">
         
         {/* Journal Column */}

@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero",
-      "description": "A bride and groom in an elegant embrace in a grand hall",
-      "imageUrl": "https://images.unsplash.com/photo-1599462616558-2b75fd26a283?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHx3ZWRkaW5nJTIwY291cGxlfGVufDB8fHx8MTc2OTA5MzQ4MXww&ixlib=rb-4.1.0&q=80&w=1080",
-      "imageHint": "wedding couple"
+      "description": "Black and white photo of a wedding aisle with guests seated",
+      "imageUrl": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "wedding aisle"
     },
     {
       "id": "intro-main",

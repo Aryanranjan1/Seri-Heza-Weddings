@@ -20,7 +20,7 @@ export default {
         headline: ['"Playfair Display"', 'serif'],
         body: ['Lora', 'serif'],
         ui: ['Montserrat', 'sans-serif'],
-        signature: ['"Great Vibes"', 'cursive'],
+        signature: ['"Mrs Saint Delafield"', 'cursive'],
       },
       colors: {
         'latte': '#eae1da',
@@ -95,10 +95,15 @@ export default {
             height: '0',
           },
         },
+        kenBurns: {
+          '0%': { transform: 'scale(1)' },
+          '100%': { transform: 'scale(1.1)' },
+        },
       },
       animation: {
         'accordion-down': 'accordion-down 0.2s ease-out',
         'accordion-up': 'accordion-up 0.2s ease-out',
+        kenBurns: 'kenBurns 25s infinite alternate',
       },
     },
   },

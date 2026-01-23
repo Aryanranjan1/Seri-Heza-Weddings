@@ -6,7 +6,7 @@ const IntroSection = () => {
   const floatingImage = PlaceHolderImages.find((img) => img.id === 'intro-floating');
 
   return (
-    <section id="about" className="bg-background py-20 md:py-32">
+    <section id="intro" className="bg-background py-20 md:py-32">
       <div className="mx-auto grid w-full max-w-7xl grid-cols-1 items-center gap-12 px-[5%] lg:grid-cols-2 lg:gap-24">
         <div className="relative lg:pr-8">
           <div className="absolute left-[-30px] top-[10px] hidden h-[100px] w-px bg-muted-gold lg:block" />

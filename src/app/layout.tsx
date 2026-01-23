@@ -5,8 +5,8 @@ import Header from '@/components/header';
 import Footer from '@/components/footer';
 
 export const metadata: Metadata = {
-  title: 'Seri Heza Weddings | Premier Planner & Stylist',
-  description: 'Dimana impian raja seharimu terlaksana. High-end editorial wedding planner for a flawless celebration.',
+  title: 'SERIHEZA - The Amazing Wedding',
+  description: 'Dimana impian raja seharimu terlaksana. Seriheza is a premier wedding planner and stylist in Malaysia creating amazing weddings.',
 };
 
 export default function RootLayout({
@@ -20,9 +20,9 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet" />
         <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet" />
-        <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet" />
       </head>
       <body className="font-body antialiased">
         <Header />
