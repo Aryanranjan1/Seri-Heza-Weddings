@@ -5,7 +5,7 @@ import Logo from '@/components/logo';
 import { cn } from '@/lib/utils';
 import { Button } from './ui/button';
 import { Menu, X } from 'lucide-react';
-import { Sheet, SheetContent, SheetTrigger } from './ui/sheet';
+import { Sheet, SheetContent, SheetHeader, SheetTitle, SheetDescription, SheetTrigger } from './ui/sheet';
 
 const navLinks = [
   { href: '#home', label: 'Home' },
@@ -70,6 +70,12 @@ const Header = () => {
                 </Button>
               </SheetTrigger>
               <SheetContent side="right" className="bg-background w-[250px] sm:w-[300px]">
+                <SheetHeader>
+                  <SheetTitle className="sr-only">Mobile Menu</SheetTitle>
+                  <SheetDescription className="sr-only">
+                    A list of navigation links to sections of the page.
+                  </SheetDescription>
+                </SheetHeader>
                 <div className="flex flex-col items-center justify-center h-full gap-8">
                   {navLinks.map((link) => (
                     <NavLink key={link.href} {...link} onClick={() => setIsMobileMenuOpen(false)} />
