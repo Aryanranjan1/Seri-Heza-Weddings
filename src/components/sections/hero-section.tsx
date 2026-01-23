@@ -37,7 +37,7 @@ const HeroSection = () => {
         <span className={cn('font-ui text-sm uppercase tracking-[0.3em] mb-6', fadeUp('delay-200'))}>
           Established Elegance
         </span>
-        <h1 className={cn('font-headline text-[2.8rem] md:text-[4.5rem] leading-tight mb-4 drop-shadow-lg', fadeUp('delay-500'))}>
+        <h1 className={cn('font-headline text-[2.52rem] md:text-[4.05rem] leading-tight mb-4 drop-shadow-lg', fadeUp('delay-500'))}>
           Dimana Impian Raja<br/>Seharimu Terlaksana
         </h1>
         <h2 className={cn('font-ui text-[0.7rem] md:text-[0.9rem] uppercase tracking-[0.15em] font-light mb-14', fadeUp('delay-800'))}>
