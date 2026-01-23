@@ -49,6 +49,12 @@
       "imageHint": "wedding details",
       "width": 800,
       "height": 1200
+    },
+    {
+      "id": "journal-hero",
+      "description": "A lavish Malay wedding setup with intricate details and decorations",
+      "imageUrl": "https://images.unsplash.com/photo-1623689405629-9e8c45479632?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "malay wedding"
     }
   ]
 }
