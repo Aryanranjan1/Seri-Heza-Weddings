@@ -37,13 +37,13 @@ const HeroSection = () => {
         <span className={cn('font-ui text-sm uppercase tracking-[0.3em] mb-6', fadeUp('delay-200'))}>
           Established Elegance
         </span>
-        <h1 className={cn('font-headline text-5xl md:text-6xl lg:text-7xl leading-tight mb-4 drop-shadow-lg', fadeUp('delay-500'))}>
+        <h1 className={cn('font-headline text-[2.8rem] md:text-[4.5rem] leading-tight mb-4 drop-shadow-lg', fadeUp('delay-500'))}>
           Dimana Impian Raja<br/>Seharimu Terlaksana
         </h1>
-        <h2 className={cn('font-ui text-sm uppercase tracking-[0.15em] font-light mb-14', fadeUp('delay-800'))}>
+        <h2 className={cn('font-ui text-[0.7rem] md:text-[0.9rem] uppercase tracking-[0.15em] font-light mb-14', fadeUp('delay-800'))}>
           Premier Wedding Planner & Stylist for Amazing Weddings
         </h2>
-        <Link href="#intro" className={cn('inline-block border border-white px-11 py-4 font-ui text-xs uppercase tracking-[0.2em] transition-colors hover:bg-white hover:text-black', fadeUp('delay-1000'))}>
+        <Link href="#intro" className={cn('inline-block border border-white px-8 py-3.5 md:px-11 md:py-4 font-ui text-[0.7rem] md:text-xs uppercase tracking-[0.2em] transition-colors hover:bg-white hover:text-black', fadeUp('delay-1000'))}>
           Start Your Journey
         </Link>
       </div>
