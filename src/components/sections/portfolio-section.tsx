@@ -35,7 +35,11 @@ const PortfolioSection = () => {
     const itemsToShow = portfolioItems.filter(item => item.page === currentPage);
 
     return (
-        <section id="portfolio" ref={sectionRef} className="bg-[#FDFBF8] px-[3%] pt-12 pb-24 overflow-hidden border-b border-t-2 border-accent">
+        <section
+            id="portfolio"
+            ref={sectionRef}
+            className="bg-[#FDFBF8] px-[3%] py-24 overflow-hidden border-t-4 border-b-4 border-accent"
+        >
             <div className="text-center mb-24">
                 <h2 className="font-serif text-4xl md:text-5xl text-foreground uppercase tracking-widest font-normal">
                     Enchanted Events

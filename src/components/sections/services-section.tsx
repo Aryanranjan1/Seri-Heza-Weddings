@@ -58,7 +58,7 @@ const ServicesSection = () => {
   }, []);
 
   return (
-    <section id="services" className="grid w-full lg:min-h-[800px] lg:h-screen grid-cols-1 lg:grid-cols-2">
+    <section id="services" className="grid w-full lg:min-h-[800px] grid-cols-1 lg:grid-cols-2">
       <div className="relative h-[50vh] lg:h-full w-full overflow-hidden bg-black group">
         {sliderImages.map((image, index) => {
           if (!image) return null;
