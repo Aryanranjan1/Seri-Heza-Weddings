@@ -59,4 +59,23 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-headline;
   }
+
+  /* Custom Scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(var(--secondary));
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(var(--accent));
+    border-radius: 10px;
+    border: 2px solid hsl(var(--secondary));
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(43 44% 46%);
+  }
 }
