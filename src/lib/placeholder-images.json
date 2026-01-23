@@ -26,25 +26,25 @@
     },
     {
       "id": "portfolio-fw-1",
-      "description": "Couple getting married, Tom & Angela",
-      "imageUrl": "https://images.unsplash.com/photo-1511285560982-1351c4f8c31b?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "wedding couple",
+      "description": "Bride and groom, Kristina & Mike",
+      "imageUrl": "https://images.unsplash.com/photo-1583939003579-730e3918a45a?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "bride groom",
       "width": 1000,
       "height": 800
     },
     {
       "id": "portfolio-fw-2",
-      "description": "Wedding ceremony for Sara & Nick",
-      "imageUrl": "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "wedding ceremony",
+      "description": "Couple kissing at their wedding ceremony",
+      "imageUrl": "https://images.unsplash.com/photo-1460978812857-470ed1c77af0?q=80&w=1295&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "wedding couple",
       "width": 1000,
       "height": 800
     },
     {
       "id": "portfolio-fw-3",
-      "description": "Wedding reception for Rizal & Yasmin",
-      "imageUrl": "https://images.unsplash.com/photo-1606800052052-a08af7148866?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "wedding reception",
+      "description": "A beautiful wedding cake",
+      "imageUrl": "https://images.unsplash.com/photo-1607357910286-1ff94ac13c24?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "wedding cake",
       "width": 1000,
       "height": 800
     },
@@ -107,7 +107,7 @@
     {
       "id": "service-slider-1",
       "description": "Close-up of a bride having her makeup applied",
-      "imageUrl": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=2071&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1573676048035-9c2a72b6a12a?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "bridal makeup",
       "width": 1000,
       "height": 1250
@@ -115,24 +115,24 @@
     {
       "id": "service-slider-2",
       "description": "Elegant wedding table decoration with candles and flowers",
-      "imageUrl": "https://images.unsplash.com/photo-1519225421980-715cb0202128?q=80&w=2000&auto=format&fit=crop",
+      "imageUrl": "https://images.unsplash.com/photo-1607190074257-dd4b7af0309f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "wedding decor",
       "width": 1000,
       "height": 1250
     },
     {
       "id": "service-slider-3",
-      "description": "A beautiful traditional wedding dress hanging",
-      "imageUrl": "https://images.unsplash.com/photo-1594122230689-45899d9e6f69?q=80&w=2070&auto=format&fit=crop",
+      "description": "A beautiful traditional wedding dress from behind",
+      "imageUrl": "https://images.unsplash.com/photo-1546032996-6dfacbacbf3f?q=80&w=712&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageHint": "wedding attire",
       "width": 1000,
       "height": 1250
     },
     {
       "id": "service-slider-4",
-      "description": "A person writing on a clipboard, symbolizing wedding planning",
-      "imageUrl": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop",
-      "imageHint": "wedding planning",
+      "description": "Close-up of wedding rings, symbolizing full planning",
+      "imageUrl": "https://images.unsplash.com/photo-1606216794074-735e91aa2c92?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageHint": "wedding details",
       "width": 1000,
       "height": 1250
     }
