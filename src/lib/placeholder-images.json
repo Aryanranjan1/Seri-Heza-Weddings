@@ -25,14 +25,6 @@
       "imageHint": "malay wedding"
     },
     {
-      "id": "journal-hero-new",
-      "description": "A beautiful Malay wedding setup",
-      "imageUrl": "https://images.unsplash.com/photo-1623689405629-9e8c45479632?q=80&w=2070&auto=format&fit=crop",
-      "imageHint": "malay wedding",
-      "width": 1200,
-      "height": 800
-    },
-    {
       "id": "portfolio-fw-1",
       "description": "Couple getting married, Tom & Angela",
       "imageUrl": "https://images.unsplash.com/photo-1511285560982-1351c4f8c31b?q=80&w=2070&auto=format&fit=crop",
@@ -111,6 +103,38 @@
       "imageHint": "wedding aisle",
       "width": 1000,
       "height": 800
+    },
+    {
+      "id": "service-slider-1",
+      "description": "Close-up of a bride having her makeup applied",
+      "imageUrl": "https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?q=80&w=2071&auto=format&fit=crop",
+      "imageHint": "bridal makeup",
+      "width": 1000,
+      "height": 1250
+    },
+    {
+      "id": "service-slider-2",
+      "description": "Elegant wedding table decoration with candles and flowers",
+      "imageUrl": "https://images.unsplash.com/photo-1519225421980-715cb0202128?q=80&w=2000&auto=format&fit=crop",
+      "imageHint": "wedding decor",
+      "width": 1000,
+      "height": 1250
+    },
+    {
+      "id": "service-slider-3",
+      "description": "A beautiful traditional wedding dress hanging",
+      "imageUrl": "https://images.unsplash.com/photo-1594122230689-45899d9e6f69?q=80&w=2070&auto=format&fit=crop",
+      "imageHint": "wedding attire",
+      "width": 1000,
+      "height": 1250
+    },
+    {
+      "id": "service-slider-4",
+      "description": "A person writing on a clipboard, symbolizing wedding planning",
+      "imageUrl": "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2069&auto=format&fit=crop",
+      "imageHint": "wedding planning",
+      "width": 1000,
+      "height": 1250
     }
   ]
 }

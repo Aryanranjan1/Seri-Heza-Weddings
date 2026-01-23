@@ -23,6 +23,7 @@ export default {
         signature: ['"Mrs Saint Delafield"', 'cursive'],
       },
       colors: {
+        'latte': '#eae1da',
         'dusty-rose': '#F2E8E4',
         'dark-maroon': '#5A1B28',
         'whatsapp-green': '#25D366',
